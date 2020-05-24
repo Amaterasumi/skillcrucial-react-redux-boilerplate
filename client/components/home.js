@@ -1,7 +1,4 @@
 import React, { useState } from 'react'
-import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
-import { Link } from 'react-router-dom'
 import Head from './head'
 
 const Home = () => {
@@ -29,8 +26,4 @@ const Home = () => {
 
 Home.propTypes = {}
 
-const mapStateToProps = () => ({})
-
-const mapDispatchToProps = (dispatch) => bindActionCreators({}, dispatch)
-
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default Home
